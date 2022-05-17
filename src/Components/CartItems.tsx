@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../store';
 
 const CartItems = () => {
-  const [cartItems, setCartItems] = useState([]);
   const wantedItem = useSelector((state:RootState) => state.product.value);
 
   return (
